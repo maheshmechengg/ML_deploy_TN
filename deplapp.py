@@ -20,7 +20,7 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='TN should be {} Nm'.format(output))
+    return render_template('index.html', prediction_text='Predicted Damage Severity(TN) should be {} Nm, with model R2=0.984 & Adj-R2= 0.953'.format(output))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
