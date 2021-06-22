@@ -18,13 +18,13 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="engtorque" placeholder="Engine peak torque" required="required" />
-      <input type="text" name="first_gear_ratio" placeholder="1st Gear ratio" required="required" />
+    	<input type="text" name="engpower" placeholder="Engine peak power [in kW]" required="required" />
+      <!-- <input type="text" name="first_gear_ratio" placeholder="1st Gear ratio" required="required" /> -->
       <input type="text" name="fdr" placeholder="FDR" required="required" />
-      <input type="text" name="lap" placeholder="LAP" required="required" />
-      <input type="text" name="gvw" placeholder="GVW" required="required" />
-      <input type="text" name="gcw" placeholder="GCW" required="required" />
-      <input type="text" name="tire" placeholder="Tire" required="required" />
+      <!--<input type="text" name="lap" placeholder="LAP" required="required" />  -->
+      <input type="text" name="gvw" placeholder="GVW [in lbs]" required="required" />
+      <!--<input type="text" name="gcw" placeholder="GCW" required="required" />  -->
+      <input type="text" name="tire" placeholder="Tire [DLR in m]" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
